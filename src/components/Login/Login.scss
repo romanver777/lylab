@@ -1,0 +1,97 @@
+.login {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-card {
+  position: relative;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 0 25px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.login__title {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 25px;
+  color: #2f4f4f;
+}
+.login__form {
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.email-wrap,
+.pass-wrap {
+  position: relative;
+}
+.input-email,
+.input-pass {
+  box-sizing: border-box;
+  height: 38px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  border-radius: 6px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  color: #808080;
+  border: none;
+  outline: none;
+}
+.btn {
+  width: 100%;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 10px;
+  border: 1px solid #dbdbdb;
+  padding: 0 15px;
+  line-height: 35px;
+  background-color: rgb(46, 182, 125);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+
+  @media (hover: hover) {
+    &:hover {
+      transition: 0.3s;
+      background-color: rgb(46, 182, 125, 0.8);
+    }
+  }
+}
+.error-form,
+.errorMsg {
+  position: absolute;
+  color: #b62e2e;
+  font-size: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.error-form {
+  top: 60px;
+}
+.errorMsg {
+  bottom: -17px;
+}
+.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.successData{
+  position: absolute;
+  bottom: 22%;
+}
